@@ -18,7 +18,7 @@ while True:
     faccia = face_cascade.detectMultiScale(gray, 1.3, 5)#salvo le facce nella foto in una lista
 
             
-    if tempoFaccia==int(time.time()): #ogni qual volta che passano 3 secondi
+    if tempoFaccia==int(time.time()): #ogni 3 secondi
         tempoFaccia=int(time.time())+3 #incremento i secondi da attendere
         if len(faccia)==0: #se non ha rilevato facce
             print("nessun volto rilevato ")
@@ -29,7 +29,7 @@ while True:
             tempo=int(time.time())+6 #incremento i secondi da attendere
             if len(faccia)!=0: #se ci sono facce nello schermo
                 cv2.imwrite("volto_%d.jpg" % volto, frame) #cattura il frame e lo salvo
-                volto+=1#devi fare in modo che la foto la faccia dopo un delay tra un volto e l'altro e non per ogni volto rilevato, senza ridurre i frame della webcam. TROPPE FOTO
+                volto+=1
                 print("foto effettuate: "+str(volto)) #foto salvate  
 
     
@@ -47,6 +47,6 @@ while True:
         break
         
             
-video.release() #addio fotocamera
+video.release() #rilascio la fotocamera
 print("registrazione interrotta, foto effettuate: "+str(volto)) #stampo il numero di foto effettuate 
-cv2.destroyAllWindows() #tutta la memoria allocata va a farsi fottere
+cv2.destroyAllWindows()
