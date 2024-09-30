@@ -1,14 +1,14 @@
-# Face Recognizer - Emulatore di Telecamera di Sicurezza 📸
+# Face Recognizer - Security Camera Emulator 📸
 
-## Introduzione 🚀
-Il progetto Face Recognizer simula una telecamera di sicurezza intelligente che utilizza il riconoscimento facciale per individuare e inquadrare volti umani, scattando automaticamente una foto ogni 3 secondi. Basato su Python e sfruttando la potente libreria OpenCV (CV2), insieme a un file XML contenente i parametri per il riconoscimento del volto, questo sistema offre un eccellente esempio di come le tecnologie di visione artificiale possano essere applicate nella sicurezza e nel monitoraggio.
+## Introduction 🚀
+The Face Recognizer project simulates an intelligent security camera that uses facial recognition to detect and frame human faces, automatically taking a photo every 3 seconds. Built with Python and powered by the robust OpenCV (CV2) library, along with an XML file containing face recognition parameters, this system demonstrates how computer vision technologies can be applied in security and surveillance.
 
-## Caratteristiche Principali 📋
-- **Riconoscimento Facciale**: Utilizza algoritmi  di riconoscimento facciale per identificare i volti umani nell'immagine in tempo reale.
-- **Scatto Automatico**: Quando un volto è riconosciuto, il sistema scatta automaticamente una foto ogni 3 secondi, permettendo di tenere traccia degli individui nel campo visivo della telecamera.
-- **Archiviazione delle Foto**: Le immagini catturate vengono salvate in una directory specificata, per una facile revisione e analisi.
+## Main Features 📋
+- **Facial Recognition**: Uses facial recognition algorithms to identify human faces in real-time.
+- **Automatic Photo Capture**: When a face is detected, the system automatically takes a photo every 3 seconds, allowing continuous tracking of individuals within the camera's view.
+- **Photo Storage**: Captured images are saved to a specified directory for easy review and analysis.
 
-## Tecnologie Utilizzate 💻
+## Technologies Used 💻
 - **Python**
 - **OpenCV (CV2)**
-- **File XML per il Riconoscimento del Volto**
+- **XML File for Face Recognition**
